@@ -619,14 +619,22 @@ int main(int argc, const char **argv)
 
         else if (strcmp(argv[1], "play") == 0)
         {
-            if (access(argv[2], F_OK) != 0)
+            if (argc >= 3){
+                if (access(argv[2], F_OK) != 0)
+                {
+                    printf("audi: could not open '%s'\n", argv[2]);
+                    SDL_Quit();
+                    return 1;
+                }
+
+                c = PLAY_FILE;
+            }
+            else
             {
-                printf("audi: could not open '%s'\n", argv[2]);
+                printf("audi: no audio file provided\n");
                 SDL_Quit();
                 return 1;
             }
-
-            c = PLAY_FILE;
         }
         else
         {
