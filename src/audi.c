@@ -80,7 +80,7 @@ void free_err_file_ref()
 // Prints help message
 void print_help(void)
 {
-    printf("audi - a minimalistic terminal based audio player (SDL2_Mixer v2.8.0)\n\
+    printf("audi - a minimalistic terminal based audio player (SDL2_Mixer v2.0-0)\n\
 current version: v1.0\n\n\
 below is a list of possible commands:\n\
 help\t\t- prints the help message\n\

@@ -10,7 +10,7 @@ INCLIBS := -lSDL2 -lSDL2_mixer -lncurses -ljson-c
 MAIN_FILE := src/audi.c
 BIN_FOLDER := out
 OUTPUT_BIN := $(BIN_FOLDER)/audi
-REQ_LIBS := libsdl2-dev libsdl2-mixer-dev libncurses-dev libjson-c-dev
+REQ_LIBS := libsdl2-dev libsdl2-mixer-dev-2.0-0 libncurses-dev libjson-c-dev
 TEST_DIR := test
 TEST_FILE := $(TEST_DIR)/ok.wav
 
