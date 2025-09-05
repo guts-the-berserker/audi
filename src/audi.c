@@ -563,7 +563,7 @@ int main(int argc, const char **argv)
     // Quit if SDL didnt initialize
     if (SDL_Init(SDL_INIT_AUDIO) == -1)
     {
-        printf("audi: error initializing SDL2\nerr log: %s\n", SDL_GetError());
+        printf("audi: error initializing SDL2\nerror log: %s\n", SDL_GetError());
         return 100;
     }
 
@@ -653,7 +653,7 @@ int main(int argc, const char **argv)
         exit_status = play_playlist(argv[2]);
         break;
     default:
-        printf("audi: unknown command provided (cmd not registered!)\n");
+        printf("audi: unknown command provided (command not registered!)\n");
         exit_status = 1;
         break;
     }
